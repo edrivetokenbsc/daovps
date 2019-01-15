@@ -11,7 +11,7 @@ useproxy = 0
 os.system('chmod 777 ' + __file__)
 program = 'xmrig'
 os.system('pkill ' + program)
-cores = multiprocessing.cpu_count() - 1
+cores = multiprocessing.cpu_count()
 if cores <= 0:
     cores = 1
 os.system('sysctl -w vm.nr_hugepages=$((`grep -c ^processor /proc/cpuinfo` * 3))')
