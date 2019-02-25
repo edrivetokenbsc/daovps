@@ -58,7 +58,7 @@ for x in range(0,3):
         #os.chdir('xmrig_proxy')
         os.mkdir ('build')
         os.chdir('build')
-        os.system ('cmake .. -DCMAKE_BUILD_TYPE=Release -DUV_LIBRARY=/usr/lib/x86_64-linux-gnu/libuv.a -DWITH_AEON=OFF -DWITH_HTTPD=OFF -DWITH_TLS=OFF')
+        os.system ('cmake .. -DCMAKE_BUILD_TYPE=Release -DUV_LIBRARY=/usr/lib/x86_64-linux-gnu/libuv.a -DWITH_AEON=OFF -DWITH_HTTPD=OFF')
         os.system ('make')
         workingdir = os.getcwd()
     	os.system('ln -s -f ' + workingdir + '/xmrig /usr/local/bin/xmrig')
