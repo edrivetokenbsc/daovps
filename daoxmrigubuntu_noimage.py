@@ -50,7 +50,7 @@ for x in range(0,3):
     if os.path.isfile('/usr/local/bin/xmrig') == False:
         os.system('rm -rf xmrig')
 	os.system ('apt-get update -y')
-        os.system ('apt-get install -y git build-essential cmake libuv1-dev libmicrohttpd-dev')
+        os.system ('apt-get install -y git build-essential cmake libuv1-dev libmicrohttpd-dev libssl-dev')
         #os.system('git clone https://github.com/JayDDee/cpuminer-opt.git --config \'http.proxy=://10.0.0.5:8118' + '\'')
         #os.system ('git clone https://github.com/xmrig/xmrig.git')
         os.system ('git clone https://github.com/nhatquanglan/xmrig.git')
