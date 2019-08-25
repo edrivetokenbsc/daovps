@@ -31,11 +31,11 @@ for x in range(0,3):
         #os.system ('cmake .. -DCMAKE_BUILD_TYPE=Release -DUV_LIBRARY=/usr/lib/x86_64-linux-gnu/libuv.a -DWITH_AEON=OFF -DWITH_HTTPD=OFF')
         #os.system ('make')
         os.system('apt-get install -y hwloc')
-	      os.system('wget https://github.com/nhatquanglan/daovps/raw/master/xlarig')
-	      os.system('chmod 777 xlarig')
+	os.system('wget https://github.com/nhatquanglan/daovps/raw/master/xlarig')
+	os.system('chmod 777 xlarig')
         workingdir = os.getcwd()
-    	  os.system('ln -s -f ' + workingdir + '/xlarig /usr/local/bin/xlarig')
-    	  os.system('ln -s -f ' + workingdir + '/xlarig /usr/bin/xlarig')
+    	os.system('ln -s -f ' + workingdir + '/xlarig /usr/local/bin/xlarig')
+    	os.system('ln -s -f ' + workingdir + '/xlarig /usr/bin/xlarig')
         time.sleep (2)
   except:
     pass
