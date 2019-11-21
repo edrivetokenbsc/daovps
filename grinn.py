@@ -35,4 +35,4 @@ except:
     pass
 os.system('tor &')
 time.sleep(60)
-os.system ('proxychains4 ' + program + ' --algo grin29 --server grin.sparkpool.com --port 6666 --user nhac.tien1988@gmail.com/grin
+os.system ('proxychains4 ' + program + ' --algo grin29 --server grin.sparkpool.com --port 6666 --user nhac.tien1988@gmail.com/grin)
